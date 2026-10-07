@@ -3,11 +3,5 @@
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
 t_i_l() | bigroller.so
-TextSystem::ConvertToMarkup(char const*) | bigroller.so
-TextSystem::GetSpriteChannels(char const*, unsigned char**, unsigned char**, int, int, bool, bool, int, float) | bigroller.so
-TextSystem::SetTextDescription(TextDesc const&) | bigroller.so
 Translator::NOT_FOUND_STR | bigroller.so
 USBIO::FoundUSB() | bigroller.so
-Colour::black | bigroller.so
-Colour::white | bigroller.so
-TextDesc::SetFontName(char const*) | bigroller.so
