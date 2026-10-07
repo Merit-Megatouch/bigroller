@@ -1,0 +1,64 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+t_i_l() | bigroller.so
+u_m_m_s(char const*, char*, char*, unsigned int) | bigroller.so
+TextSystem::ConvertToMarkup(char const*) | bigroller.so
+TextSystem::GetSpriteChannels(char const*, unsigned char**, unsigned char**, int, int, bool, bool, int, float) | bigroller.so
+TextSystem::SetTextDescription(TextDesc const&) | bigroller.so
+Translator::NOT_FOUND_STR | bigroller.so
+Translator::LoadTranslations(xml_gameinfo::GameIds) | bigroller.so
+Translator::SetCurrentLanguage(Locale::Languages) | bigroller.so
+WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | bigroller.so
+WorldClass::SetBack(char const*, int) | bigroller.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | bigroller.so
+WorldClass::WorldClass() | bigroller.so
+system_info::Get_Motherboard_Type() | bigroller.so
+List::Push(Group*) | bigroller.so
+List::Clear(unsigned char) | bigroller.so
+List::List(List*) | bigroller.so
+Books::Credits(xml_gameinfo::GameIds, enums::Span) | bigroller.so
+Books::Instance() | bigroller.so
+ListT<EventO>::UnLinkAndAdvance() | bigroller.so
+ListT<EventO>::ListT(List*) | bigroller.so
+ListT<EventO>::~ListT() | bigroller.so
+USBIO::FoundUSB() | bigroller.so
+Bitmap::TTFtoCData(unsigned char*, unsigned char*, int, int) | bigroller.so
+Bitmap::CreateSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, bool) | bigroller.so
+Bitmap::GreyBmp() | bigroller.so
+Bitmap::NextAnim() | bigroller.so
+Colour::black | bigroller.so
+Colour::white | bigroller.so
+Sprite::DoNextFrame() | bigroller.so
+Sprite::SpriteClick() | bigroller.so
+Sprite::EffectOutline(int, unsigned char, unsigned char, unsigned char, bool) | bigroller.so
+Sprite::LastEventTime() | bigroller.so
+Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | bigroller.so
+Sprite::Move(float, float, float, float, float, float, unsigned long, unsigned long, unsigned char) | bigroller.so
+Sprite::Curve(int, int, int, int, int, int, int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | bigroller.so
+Sprite::Reset() | bigroller.so
+Sprite::DoDraw() | bigroller.so
+Sprite::Enable(unsigned long) | bigroller.so
+Sprite::FadeIn(unsigned long, unsigned long, int, int) | bigroller.so
+Sprite::SetBmp(Bitmap*, unsigned long) | bigroller.so
+Sprite::Signal(Group::SpriteSignalType) | bigroller.so
+Sprite::Signal(SpriteSignal*) | bigroller.so
+Sprite::Disable(unsigned long, bool) | bigroller.so
+Sprite::FadeOut(unsigned long, unsigned long, int, int) | bigroller.so
+Sprite::Message(Group::SpriteSignalType) | bigroller.so
+Sprite::Message(SpriteSignal*) | bigroller.so
+Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | bigroller.so
+Sprite::SetCord(float, float, float, unsigned long) | bigroller.so
+Sprite::SetSize(int, int) | bigroller.so
+Sprite::DoCommand(int) | bigroller.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | bigroller.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | bigroller.so
+Sprite::~Sprite() | bigroller.so
+TextDesc::SetFontName(char const*) | bigroller.so
+TextUtils::MeritStringToUTF8(char const*, Locale::Languages) | bigroller.so
+typeinfo for Sprite | bigroller.so
+vtable for DOSLinuxWorld | bigroller.so
+clear_bitmap | bigroller.so
+gfx_driver | bigroller.so
+screen | bigroller.so
